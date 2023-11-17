@@ -93,3 +93,7 @@ Así queda confirmado el primer "push" de nuestro proyecto.
 También podemos confirmar que se han subido correctamente los cambios, actualizando el repositorio en Github y verificando que aparecen los cambios relizados.
 
 ![Actualizar-repositorio](/assets/actualizar-repositorio.png)
+
+Seguimos redactando nuestro proyecto en formato Markdown en el fichero 'README.md' y añadimos la carpeta 'assets' para incluir capturas de pantalla para acompañar la redacción.
+
+También añadimos un fichero llamado 'fichero.js', dentro de la carpeta 'src', en el cual incluimos un 'console.log' que más adelante modificaremos desde otra rama para crear un ejemplo de conflicto de merge.
