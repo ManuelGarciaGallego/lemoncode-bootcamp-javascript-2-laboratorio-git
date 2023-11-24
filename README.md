@@ -96,4 +96,24 @@ También podemos confirmar que se han subido correctamente los cambios, actualiz
 
 Seguimos redactando nuestro proyecto en formato Markdown en el fichero 'README.md' y añadimos la carpeta 'assets' para incluir capturas de pantalla para acompañar la redacción.
 
-También añadimos un fichero llamado 'fichero.js', dentro de la carpeta 'src', en el cual incluimos un 'console.log' que más adelante modificaremos desde otra rama para crear un ejemplo de conflicto de merge.
+También añadimos un fichero llamado 'fichero.js', en el cual incluimos un 'console.log' que más adelante modificaremos desde otra rama para crear un ejemplo de conflicto de merge.
+
+![Console.log](/assets/console-log.png)
+
+Procederemos a continuación como hemos hecho anteriormente con el fichero README.md; es decir añadimos los ficheros nuevos y los que han sido modificados al estado de staging con el comando **git add .**.
+
+También podemos hacerlo fichero a fichero con el comando **git add NombreDelFicheroQueQueremosAñadir** y así pasar a staging un sólo fichero en concreto. En nuestro caso pasamos a staging sólo el fichero 'fichero.js', para tener un ejemplo de ello.
+
+![Git add fichero.js](/assets/git-add-fichero.js.png)
+
+Procedemos a 'comitear' los cambios.
+
+![Commit fichero.js](/assets/commit-fichero.js.png)
+
+Y pasamos el fichero desde el repositorio local al repesitorio remoto usando en este caso el comando **git push** ya que antes hemos subido otros cambios y este no es el primero que hacemos.
+
+![Git push](/assets/git-push.png)
+
+Comprobamos que aparece nuestro cambio, (fichero.js), en el repositorio en GitHub.
+
+![Fichero.js en GitHub](/assets/fichero.js-GitHub.png)
