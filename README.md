@@ -67,3 +67,41 @@ De igual forma procedemos para añadir algo de contenido al archivo "README.md" 
 Procedemos como antes a añadir el archivo "README.md" al repositorio local, al estar el archivo ya trackeado usamos el comando **git commit -am 'mensajeExplicativo'**, así añadimos el archivo a "staging" y comiteamos los cambios, además de escribir el mensaje del "commit", todo con el mismo comando.
 
 ![Git commit -am](/assets/git-commit-am.png)
+
+## 2. Subir el repositorio a GitHub.
+
+Es momento de crear nuestro repositorio en remoto, para ello utilizaremos la plataforma Github en la cual ya estamos registrados.
+
+![Avatar Github.](/assets/github-avatar.png)
+
+Vamos a repositorios y pinchamos en **new** para acceder a la creación de repositorios.
+
+![Nuevo repositorio](/assets/new-repository.png)
+
+Ponemos nombre a nuestro repositorio en la nube, (en nuestro caso coincidirá con el nombre del proyecto en local); no le añadimos "README.md" ya que lo hemos añadido en nuestro repositorio en local, ni tampoco ".gitignore" ya que el proyecto es sencillo y no necesitaremos ignorar ningún archivo, lo dejaremos también como "público" para que los tutores puedan visualizarlo; creamos el repositorio pinchando en el botón **Create repository**.
+
+![Crear repositorio](/assets/create-repository.png)
+
+Una vez creado nuestro repositorio remoto, copiamos la url del mismo con protocolo de seguridad ssh.
+
+![Url con protocolo ssh.](/assets/url-ssh.png)
+
+De nuevo en la terminal, utilizamos ahora el comando **git remote add origin urlDelRepositorioRemoto** para conectar el repositorio local y el remoto.
+
+![Conectar repositorios.](/assets/connect-repositories.png)
+
+Con el comando **git remote -v**, comprobamos que la conexión entre repositorios es correcta, apareciendo las direcciones de carga (push) de contenido hacia el repositorio remoto, y de descarga (fetch) de contenido desde el repositorio remoto.
+
+![Confirmación conexión.](/assets/connection-confirmation.png)
+
+Seguidamente, al ser los primeros cambios que vamos a subir al repositorio remoto, y encontrarse éste vacío, escribimos el comando **git push -u origin NombreDeLaRamaPrincipalDelProyecto**, (en nuestro caso "main"); subimos los cambios al repositorio remoto, enlazando la rama local con la que hay en remoto, (en caso de que no exista la crea). Además estamos indicando la rama en la que vamos a subir esos cambios, es decir la rama de trabajo.
+
+![Primer push.](/assets/first-push.png)
+
+Así queda confirmado el primer "push" de nuestro proyecto.
+
+![Confirmado primer push.](/assets/confirmation-first-push.png)
+
+También podemos confirmar que se han subido correctamente los cambios, actualizando el repositorio en Github y verificando que aparecen los cambios relizados.
+
+![Actualizar-repositorio.](/assets/updated-repository.png)
