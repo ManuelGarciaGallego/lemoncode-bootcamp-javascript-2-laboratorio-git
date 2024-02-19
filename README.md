@@ -131,3 +131,35 @@ Y pasamos el fichero desde el repositorio local al repesitorio remoto usando en 
 Comprobamos que aparece nuestro cambio, (fichero.js), en el repositorio en GitHub.
 
 ![Fichero.js en GitHub.](/assets/fichero.js-GitHub.png)
+
+## 4. Crear una rama.
+
+Creamos una nueva rama llamada "development", para ello utilizamos el comando **git branch nombreDeLaNuevaRama**.
+
+![Git branch.](/assets/git-brach.png)
+
+Cambiamos a la nueva rama con el comando **git checkout nombreDeLaRamaALaQueQueremosCambiar**.
+
+![Git checkout.](/assets/git-checkout.png)
+
+Comprobamos, en la ejecución del comando anterior, que hemos pasado a la rama development.
+
+![Switched to branch 'development'.](/assets/switched.png)
+
+Seguidamente realizamos algunos cambios en "fichero.js" de la rama "development".
+
+![Cambios en fichero.js](/assets/changes-fichero.js.png)
+
+Añadimos a staging y hacemos "commit" con los cambios realizados en la rama "development".
+
+![Commit de fichero.js](/assets/commit-modified-fichero.js.png)
+
+Subimos los cambios de la rama "development" al repositorio remoto.
+
+![Subimos la rama development](/assets/push-development.png)
+
+Podemos comprobar en el repositorio remoto como ha quedado el "fichero.js" en las diferentes ramas.
+
+![fichero.js en main](/assets/fichero.js-in-main.png)
+
+![fichero.js en development](/assets/fichero.js-in-development.png)
