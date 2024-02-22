@@ -163,3 +163,22 @@ Podemos comprobar en el repositorio remoto como ha quedado el "fichero.js" en la
 ![fichero.js en main](/assets/fichero.js-in-main.png)
 
 ![fichero.js en development](/assets/fichero.js-in-development.png)
+
+## 5. Hacer un merge.
+
+En éste último objetivo del laboratorio nos disponemos a realizar un "merge" de la rama "development" a la rama "main", para ello primero vamos a visualizar el historial de commit utilizando el comando **git log** al cual le incluimos algunas "flags":
+
+- **--oneline**, para mostrar los commit en una sóla línea.
+- **--decorate**, muestra los commit y ramas a los que se apunta.
+- **--graph**, se muestra un ábol de commit.
+- **--all**, muestra todos los commit de todas las ramas.
+
+![git log](/assets/git_log.png)
+
+Seguidamente nos posicionamos de nuevo en la rama "main" con el ya citado comando **git checkout**.
+
+![git checkout main](/assets/git-checkout-main.png)
+
+Una vez posicionados en nuestra rama principal, utilizamos el comando **git merge** + (nombre de la rama que queremos fusionar con la rama principal).
+
+![git merge development](/assets/git_merge_development.png)
