@@ -134,35 +134,35 @@ Comprobamos que aparece nuestro cambio, (fichero.js), en el repositorio en GitHu
 
 ## 4. Crear una rama.
 
-Creamos una nueva rama llamada "development", para ello utilizamos el comando **git branch nombreDeLaNuevaRama**.
+Creamos una nueva rama llamada "development", para ello utilizamos el comando **git branch** + (nombre de la nueva rama).
 
-![Git branch.](/assets/git-brach.png)
+![git branch.](/assets/git_brach.png)
 
-Cambiamos a la nueva rama con el comando **git checkout nombreDeLaRamaALaQueQueremosCambiar**.
+Cambiamos a la nueva rama con el comando **git checkout** + (nombre de la rama a la que queremos cambiar).
 
-![Git checkout.](/assets/git-checkout.png)
+![git checkout.](/assets/git_checkout.png)
 
 Comprobamos, en la ejecución del comando anterior, que hemos pasado a la rama development.
 
-![Switched to branch 'development'.](/assets/switched.png)
+![switched to branch "development".](/assets/switched.png)
 
 Seguidamente realizamos algunos cambios en "fichero.js" de la rama "development".
 
-![Cambios en fichero.js](/assets/changes-fichero.js.png)
+![cambios en "fichero.js"](/assets/changes_fichero.js.png)
 
-Añadimos a staging y hacemos "commit" con los cambios realizados en la rama "development".
+Añadimos a "staging" y hacemos "commit" de los cambios realizados en la rama "development".
 
-![Commit de fichero.js](/assets/commit-modified-fichero.js.png)
+![commit de "fichero.js"](/assets/commit_modified_fichero.js.png)
 
 Subimos los cambios de la rama "development" al repositorio remoto.
 
-![Subimos la rama development](/assets/push-development.png)
+![subimos la rama "development"](/assets/push_development.png)
 
 Podemos comprobar en el repositorio remoto como ha quedado el "fichero.js" en las diferentes ramas.
 
-![fichero.js en main](/assets/fichero.js-in-main.png)
+![fichero.js en main](/assets/fichero.js_in_main.png)
 
-![fichero.js en development](/assets/fichero.js-in-development.png)
+![fichero.js en development](/assets/fichero.js_in_development.png)
 
 ## 5. Hacer un merge.
 
