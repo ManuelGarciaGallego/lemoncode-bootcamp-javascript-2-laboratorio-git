@@ -179,6 +179,6 @@ Seguidamente nos posicionamos de nuevo en la rama "main" con el ya citado comand
 
 ![git checkout main](/assets/git-checkout-main.png)
 
-Una vez posicionados en nuestra rama principal, utilizamos el comando **git merge** + (nombre de la rama que queremos fusionar con la rama principal).
+Una vez posicionados en nuestra rama principal, utilizamos el comando **git merge** + (nombre de la rama que queremos fusionar con la rama principal) + **-m** + ('mensaje explicativo de como queda el merge').
 
-![git merge development](/assets/git_merge_development.png)
+![git merge development](/assets/git_merge.png)
