@@ -166,19 +166,33 @@ Podemos comprobar en el repositorio remoto como ha quedado el "fichero.js" en la
 
 ## 5. Hacer un merge.
 
-En éste último objetivo del laboratorio nos disponemos a realizar un "merge" de la rama "development" a la rama "main", para ello primero vamos a visualizar el historial de commit utilizando el comando **git log** al cual le incluimos algunas "flags":
+En éste último objetivo del laboratorio nos disponemos a realizar un "merge" de la rama "development" a la rama "main", para ello primero vamos a visualizar el historial de "commit" utilizando el comando **git log** al cual le añadimos algunas "flags":
 
 - **--oneline**, para mostrar los commit en una sóla línea.
 - **--decorate**, muestra los commit y ramas a los que se apunta.
 - **--graph**, se muestra un ábol de commit.
 - **--all**, muestra todos los commit de todas las ramas.
 
+Así podemos ver como se organizan nuestras ramas y "commit", y observar como cambian después del "merge".
+
 ![git log](/assets/git_log.png)
 
 Seguidamente nos posicionamos de nuevo en la rama "main" con el ya citado comando **git checkout**.
 
-![git checkout main](/assets/git-checkout-main.png)
+![git checkout main](/assets/git_checkout_main.png)
 
-Una vez posicionados en nuestra rama principal, utilizamos el comando **git merge** + (nombre de la rama que queremos fusionar con la rama principal) + **-m** + ('mensaje explicativo de como queda el merge').
+Una vez posicionados en nuestra rama principal, utilizamos el comando **git merge** + (nombre de la rama que queremos fusionar a la rama principal) + **-m** + ('mensaje explicativo de como queda el merge'), para realizar el "merge" de la ramar "development" a la rama "main".
 
 ![git merge development](/assets/git_merge.png)
+
+Después de realizar el "merge", observamos que no se ha producido ningún conflicto de "merge" entre ramas. Nos disponemos ahora a visualizar de nuevo como ha quedado el historial de "commit", observando la fusión de ramas.
+
+![git log después de merge](/assets/git_log_after_merge.png)
+
+Realizamos "push" al repositorio remoto y actualizamos el repositorio en GitHub; como podemos observar los cambios realizado en "fichero.js" de la rama "development", ahora se ven incorporados en "fichero.js" de la rama "main", fruto del "merge" realizado.
+
+![fichero.js en main después de merge](/assets/fichero.js_in_main_after_merge.png)
+
+![fichero.js en development después de merge](/assets/fichero.js_in_development_after_merge.png)
+
+Llegados a este punto podríamos borrar la rama "development" tanto del repositorio local como del remoto y así dejar nuestro proyecto más limpio, pero no lo haremos para la buena visualización del proyecto por parte de los tutores.
