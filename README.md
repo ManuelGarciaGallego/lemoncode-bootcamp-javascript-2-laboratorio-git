@@ -110,27 +110,27 @@ También podemos confirmar que se han subido correctamente los cambios, actualiz
 
 Seguimos redactando nuestro fichero "README.md" y añadimos a nuestro proyecto la carpeta "assets" para incluir las capturas de pantalla que acompañan a la redacción.
 
-También añadimos un fichero llamado "fichero.js", en el cual incluimos un "console.log" que más adelante modificaremos desde otra rama para crear un ejemplo de conflicto de merge.
+También añadimos un fichero llamado "fichero.js", en el cual incluimos un "console.log" que más adelante modificaremos desde otra rama para crear un ejemplo de "merge".
 
-![Console.log](/assets/console-log.png)
+![console.log](/assets/console_log.png)
 
-Procederemos a continuación como hemos hecho anteriormente con el fichero README.md; es decir añadimos los ficheros nuevos y los que han sido modificados al estado de staging con el comando **git add .**.
+Procederemos a continuación como hemos hecho anteriormente con el fichero "README.md"; es decir añadimos los ficheros nuevos y los que han sido modificados al estado de staging con el comando **git add .**.
 
-También podemos hacerlo fichero a fichero con el comando **git add nombreDelFicheroQueQueremosAñadir** y así pasar a staging un sólo fichero en concreto. En nuestro caso pasamos a staging sólo el fichero 'fichero.js', para tener un ejemplo de ello y también ser más epecífico en el mensaje de "commit".
+También podemos hacerlo fichero a fichero con el comando **git add** + (nombre del fichero que queremos añadir a staging) y así pasar a staging un sólo fichero en concreto. En nuestro caso pasamos a staging sólo a "fichero.js", para tener un ejemplo de ello y también ser más epecífico en el mensaje de "commit".
 
-![Git add fichero.js](/assets/git-add-fichero.js.png)
+![git add fichero.js](/assets/git_add_fichero.js.png)
 
-Procedemos a 'comitear' los cambios, (tal como describimos anteriormente con el fichero README.md).
+Procedemos a "comitear" los cambios, (tal como describimos anteriormente con el fichero "README.md").
 
-![Commit fichero.js.](/assets/commit-fichero.js.png)
+![commit fichero.js.](/assets/commit_fichero.js.png)
 
 Y pasamos el fichero desde el repositorio local al repesitorio remoto usando en este caso el comando **git push** ya que antes hemos subido otros cambios en esta rama y no es el primer cambio que hacemos.
 
-![Git push.](/assets/git-push.png)
+![git push.](/assets/git_push.png)
 
 Comprobamos que aparece nuestro cambio, (fichero.js), en el repositorio en GitHub.
 
-![Fichero.js en GitHub.](/assets/fichero.js-GitHub.png)
+![fichero.js en GitHub.](/assets/fichero.js_GitHub.png)
 
 ## 4. Crear una rama.
 
