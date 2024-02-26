@@ -2,13 +2,13 @@
 
 ## 1. Crear un repositorio en local.
 
-Esta es la práctica, del módulo 0, del bootcamp de lemoncode Javascript 2, llamada "Laboratorio Git".
+Esta es la práctica, del módulo 0, del bootcamp de lemoncode Javascript 2; llamada "Laboratorio Git".
 
 Lo primero que haremos, será abrir la terminal de nuestro editor de código favorito, Visual Studio Code.
 
 ![inicio de Visual Studio Code.](/assets/vsc.png)
 
-En nuestro caso al trabajar con macOS, usaremos el atajo de teclado **CTRL + `**, para abrir la terminal.
+En nuestro caso al trabajar con "macOS", usaremos el atajo de teclado **CTRL** + **`**, para abrir la terminal.
 
 ![apertura de terminal.](/assets/open_terminal.png)
 
@@ -28,7 +28,7 @@ Antes de iniciar nuestro proyecto en Git nos aseguramos de tener Git instalado e
 
 ![version de Git.](/assets/git_version.png)
 
-Ahora si procedemos a iniciar nuestro proyecto en un repositorio Git en local, para ello utilizamos el comando **git init**.
+Ahora sí, procedemos a iniciar nuestro proyecto en un repositorio Git en local, para ello utilizamos el comando **git init**.
 
 ![inicio del proyecto Git en local](/assets/git_init.png)
 
@@ -36,7 +36,7 @@ Se confirma la inicialización del proyecto en Git.
 
 ![inicializado Git.](/assets/git_initialized.png)
 
-También podemos observar en los ficheros ocultos de la carpeta de nuestro proyecto como se ha creado el subdirectorio ".git" con la base de datos de Git en local, en este momento también se crea la rama principal del proyecto en local.
+También podemos observar, en los ficheros ocultos de la carpeta de nuestro proyecto, como se ha creado el subdirectorio ".git" con la base de datos de Git en local; en este momento también se crea la rama principal del proyecto en local.
 
 ![carpeta .git.](/assets/git_folder.png)
 
@@ -44,23 +44,23 @@ Seguidamente abrimos nuestro proyecto en el editor de código.
 
 ![proyecto en el editor de código.](/assets/project_vsc.png)
 
-Utilizando la interfaz gráfica del editor de código creamos el fichero "README.md" que aparece con el símbolo **U**, ("untracked"), advirtiendo que aún no ha sido agregado al repositorio local. Para añadirlo al repositorio local debemos pasar antes el fichero al estado de "staging", lo cual conseguimos con el comando **git add .**.
+Utilizando la interfaz gráfica del editor de código, creamos el fichero "README.md" que aparece con el símbolo **U**, ("untracked"), advirtiendo que aún no ha sido agregado al repositorio local. Para añadirlo al repositorio local debemos pasar antes el fichero al estado de "staging", lo cual conseguimos con el comando **git add .**.
 
 ![archivo en estado "untracked".](/assets/untracked.png)
 
-A continuación observamos que el archivo "README.md" a pasado a tener el símbolo **A**, ("added"), confirmando que el archivo ha pasado a estado de "staging". Si usamos el comando **git status**, vemos que en la rama principal, (en nuestro caso main), hay un fichero "README.md", preparado para ser confirmado, "comiteado", (committed), a la base de datos del repositorio local.
+A continuación observamos que el archivo "README.md" a pasado a tener el símbolo **A**, ("added"), confirmando que el archivo ha pasado a estado de "staging". Si usamos el comando **git status**, vemos que en la rama principal, (en nuestro caso main), hay un fichero "README.md" preparado para ser confirmado, "comiteado", (committed), a la base de datos del repositorio local.
 
 ![git status.](/assets/git_status.png)
 
-Llegamos a este punto, realizamos el confirmado o "comiteado" con el comando **git commit -m** + ('mensaje explicativo'), dejando un mensaje descriptivo de como queda nuestro proyecto en ese punto.
+Llegamos a este punto, realizamos el confirmado o "comiteado" con el comando **git commit -m** + ('mensaje explicativo'), dejando un mensaje descriptivo de cómo queda nuestro proyecto en ese punto.
 
 ![git commit.](/assets/git_commit-m.png)
 
-Observamos la confirmación de la realización del primer "commit" de nuestro proyecto y el fichero "README.md" vuelve a su estado inicial.
+Observamos la confirmación del primer "commit" de nuestro proyecto y como el fichero "README.md" vuelve a su estado inicial.
 
 ![primer-commit.](/assets/firts_commit.png)
 
-De igual forma procedemos para añadir algo de contenido al fichero "README.md" para que cuando lo subamos al repositorio remoto visualicemos dicho contenido; usando el comando **git status**, observamos que el fichero "README.md" ha pasado a estado **M** ("modified").
+De igual forma procedemos para añadir algo de contenido al fichero "README.md", para que cuando lo subamos al repositorio remoto visualicemos dicho contenido; usando el comando **git status**, observamos que el fichero "README.md" ha pasado a estado **M** ("modified").
 
 ![archivo "README.md" modificado](/assets/modified_README.png)
 
