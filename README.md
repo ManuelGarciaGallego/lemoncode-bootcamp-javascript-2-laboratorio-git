@@ -120,7 +120,7 @@ También podemos hacerlo fichero a fichero con el comando **git add** + (nombre 
 
 ![git add fichero.js](/assets/git_add_fichero.js.png)
 
-Procedemos a "comitear" los cambios, (tal como describimos anteriormente con el fichero "README.md").
+Procedemos a "comitear" los cambios, tal como describimos anteriormente con el fichero "README.md".
 
 ![commit fichero.js.](/assets/commit_fichero.js.png)
 
