@@ -181,7 +181,7 @@ Seguidamente nos posicionamos de nuevo en la rama "main" con el ya citado comand
 
 ![git checkout main](/assets/git_checkout_main.png)
 
-Una vez posicionados en nuestra rama principal, utilizamos el comando **git merge** + (nombre de la rama que queremos fusionar a la rama principal) + **-m** + ('mensaje explicativo de como queda el merge'), para realizar el "merge" de la ramar "development" a la rama "main".
+Una vez posicionados en nuestra rama principal, utilizamos el comando **git merge** + (nombre de la rama que queremos fusionar a la rama principal) + **-m** + ('mensaje explicativo de como queda el merge'), para realizar el "merge" de la rama "development" a la rama "main".
 
 ![git merge development](/assets/git_merge.png)
 
@@ -195,4 +195,4 @@ Realizamos "push" al repositorio remoto y actualizamos el repositorio en GitHub;
 
 ![fichero.js en development después de merge](/assets/fichero.js_in_development_after_merge.png)
 
-Llegados a este punto podríamos borrar la rama "development" tanto del repositorio local como del remoto y así dejar nuestro proyecto más limpio, pero no lo haremos para la buena visualización del proyecto por parte de los tutores.
+Llegados a este punto, podríamos borrar la rama "development" tanto del repositorio local como del remoto y así dejar nuestro proyecto más limpio, pero no lo haremos para la buena visualización del proyecto por parte de los tutores.
